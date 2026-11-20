@@ -1,0 +1,8 @@
+delivery: fitted, best iteration 1039 (161s)
+  known: mae 56.00, rmse 93.35, acc20 37.05, acc30 51.14, packages 1645446.00 (260s)
+  hidden: mae 60.54, rmse 97.66, acc20 30.18, acc30 44.39, packages 1645446.00 (335s)
+delivery {"mae": 4.539030938491365, "rmse": 4.303890946065081, "acc20": -6.866041182755314, "acc30": -6.745769839909663} check {'mae': [55.99716496226419, 55.99716496226419]}
+pickup: fitted, best iteration 103 (124s)
+  known: mae 34.25, rmse 49.81, acc20 41.45, acc30 57.87, packages 2221350.00 (134s)
+  hidden: mae 46.38, rmse 59.36, acc20 23.54, acc30 36.69, packages 2221350.00 (142s)
+pickup {"mae": 12.133967799080473, "rmse": 9.54935576767577, "acc20": -17.905958088549756, "acc30": -21.175141242937855} check {'mae': [34.24694082377593, 34.24694082377593]}

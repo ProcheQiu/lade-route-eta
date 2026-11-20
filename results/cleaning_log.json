@@ -1,0 +1,30 @@
+{
+ "delivery": {
+  "raw_rows": 1483864,
+  "R1_duplicate_order_id": 0,
+  "R2_unparseable_time": 0,
+  "R3_stop_outside_shanghai": 37,
+  "R4_finish_not_on_ds": 6174,
+  "R5_finish_before_accept": 0,
+  "R6_zero_duration": 3148,
+  "G1_finish_gps_nulled": 20126,
+  "G2_accept_gps_nulled": 2,
+  "clean_rows": 1474505,
+  "kept_share": 0.9937
+ },
+ "pickup": {
+  "raw_rows": 1424406,
+  "R1_duplicate_order_id": 0,
+  "R2_unparseable_time": 0,
+  "R3_stop_outside_shanghai": 0,
+  "R4_finish_not_on_ds": 0,
+  "R5_finish_before_accept": 0,
+  "R6_zero_duration": 1982,
+  "R7_bad_window": 0,
+  "R8_window_not_on_ds": 9216,
+  "G1_finish_gps_nulled": 3005,
+  "G2_accept_gps_nulled": 284,
+  "clean_rows": 1413208,
+  "kept_share": 0.9921
+ }
+}

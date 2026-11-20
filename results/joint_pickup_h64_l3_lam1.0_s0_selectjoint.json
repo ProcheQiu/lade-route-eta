@@ -1,0 +1,257 @@
+{
+ "run": "pickup_h64_l3_lam1.0_s0_selectjoint",
+ "source": "Colab T4, 2026-11-16; pasted output, JSON lost on disconnect",
+ "args": {
+  "dataset": "pickup",
+  "hidden": 64,
+  "layers": 3,
+  "lam": 1.0,
+  "lr": 0.0001,
+  "batch": 64,
+  "epochs": 100,
+  "patience": 10,
+  "frac": 0.25,
+  "val_frac": 1.0,
+  "dropout": 0.1,
+  "seed": 0,
+  "select": "joint",
+  "no_edges": false,
+  "no_route_cond": false,
+  "no_courier": false,
+  "hard_window": false,
+  "device": "cuda"
+ },
+ "best_epoch": 1,
+ "test_route": {
+  "hr3": 74.3343721247737,
+  "krc": 58.46585843423965,
+  "lsd": 1.3946745487439993,
+  "lsd_sq": 5.692580708644344,
+  "ed": 5.797553200961624,
+  "snapshots": 280775
+ },
+ "test_eta": {
+  "mae": 64.1378402709961,
+  "rmse": 106.08943176269531,
+  "acc20": 35.682430189171384,
+  "acc30": 46.47826539666602,
+  "packages": 2852387
+ },
+ "seen_new_split": "not available",
+ "history": [
+  {
+   "epoch": 0,
+   "train_loss": [
+    263.801,
+    1.251,
+    262.549
+   ],
+   "val_route": {
+    "hr3": 71.48,
+    "krc": 55.72
+   },
+   "val_eta": {
+    "mae": 51.79
+   },
+   "score": -0.3059,
+   "elapsed_s": 294
+  },
+  {
+   "epoch": 1,
+   "train_loss": [
+    203.055,
+    1.116,
+    201.939
+   ],
+   "val_route": {
+    "hr3": 73.87,
+    "krc": 59.26
+   },
+   "val_eta": {
+    "mae": 50.38
+   },
+   "score": -0.2471,
+   "elapsed_s": 571
+  },
+  {
+   "epoch": 2,
+   "train_loss": [
+    187.017,
+    1.059,
+    185.958
+   ],
+   "val_route": {
+    "hr3": 74.14,
+    "krc": 59.58
+   },
+   "val_eta": {
+    "mae": 53.33
+   },
+   "score": -0.2932,
+   "elapsed_s": 848
+  },
+  {
+   "epoch": 3,
+   "train_loss": [
+    177.652,
+    1.033,
+    176.619
+   ],
+   "val_route": {
+    "hr3": 74.27,
+    "krc": 59.84
+   },
+   "val_eta": {
+    "mae": 54.84
+   },
+   "score": -0.3156,
+   "elapsed_s": 1129
+  },
+  {
+   "epoch": 4,
+   "train_loss": [
+    171.562,
+    1.018,
+    170.544
+   ],
+   "val_route": {
+    "hr3": 74.23,
+    "krc": 59.79
+   },
+   "val_eta": {
+    "mae": 54.73
+   },
+   "score": -0.3142,
+   "elapsed_s": 1411
+  },
+  {
+   "epoch": 5,
+   "train_loss": [
+    166.774,
+    1.01,
+    165.763
+   ],
+   "val_route": {
+    "hr3": 74.27,
+    "krc": 59.9
+   },
+   "val_eta": {
+    "mae": 53.52
+   },
+   "score": -0.293,
+   "elapsed_s": 1694
+  },
+  {
+   "epoch": 6,
+   "train_loss": [
+    163.066,
+    1.005,
+    162.06
+   ],
+   "val_route": {
+    "hr3": 74.2,
+    "krc": 59.8
+   },
+   "val_eta": {
+    "mae": 54.56
+   },
+   "score": -0.3113,
+   "elapsed_s": 1976
+  },
+  {
+   "epoch": 7,
+   "train_loss": [
+    160.093,
+    1.002,
+    159.091
+   ],
+   "val_route": {
+    "hr3": 74.21,
+    "krc": 59.83
+   },
+   "val_eta": {
+    "mae": 54.19
+   },
+   "score": -0.3049,
+   "elapsed_s": 2256
+  },
+  {
+   "epoch": 8,
+   "train_loss": [
+    157.205,
+    1.0,
+    156.205
+   ],
+   "val_route": {
+    "hr3": 74.19,
+    "krc": 59.78
+   },
+   "val_eta": {
+    "mae": 53.16
+   },
+   "score": -0.2883,
+   "elapsed_s": 2539
+  },
+  {
+   "epoch": 9,
+   "train_loss": [
+    154.659,
+    0.998,
+    153.661
+   ],
+   "val_route": {
+    "hr3": 74.2,
+    "krc": 59.76
+   },
+   "val_eta": {
+    "mae": 54.15
+   },
+   "score": -0.3048,
+   "elapsed_s": 2817
+  },
+  {
+   "epoch": 10,
+   "train_loss": [
+    152.369,
+    0.996,
+    151.373
+   ],
+   "val_route": {
+    "hr3": 74.25,
+    "krc": 59.88
+   },
+   "val_eta": {
+    "mae": 54.96
+   },
+   "score": -0.3171,
+   "elapsed_s": 3094
+  },
+  {
+   "epoch": 11,
+   "train_loss": [
+    150.299,
+    0.994,
+    149.306
+   ],
+   "val_route": {
+    "hr3": 74.26,
+    "krc": 59.96
+   },
+   "val_eta": {
+    "mae": 55.35
+   },
+   "score": -0.3229,
+   "elapsed_s": 3372
+  }
+ ],
+ "seconds_to_ep11": 3372,
+ "stopped": "early stop after epoch 11 (patience 10, best epoch 1)",
+ "data": {
+  "train_snapshots": 163538,
+  "val_snapshots": 296771,
+  "test_snapshots": 280775,
+  "data_ready_s": 15
+ },
+ "select_score": "krc/100 - mae/60 on validation",
+ "status": "superseded: selection rule changed to per-task (run 2)"
+}

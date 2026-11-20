@@ -1,0 +1,46 @@
+{
+ "all": {
+  "mae": 37.602330616385544,
+  "rmse": 53.771608309668814,
+  "acc20": 37.40979046672138,
+  "acc30": 53.09815954146474,
+  "packages": 2852387
+ },
+ "by_courier_known": {
+  "0": {
+   "mae": 49.413833136544184,
+   "rmse": 65.842244937205,
+   "acc20": 23.19420255864553,
+   "acc30": 36.30864751195254,
+   "packages": 631037
+  },
+  "1": {
+   "mae": 34.24694082377593,
+   "rmse": 49.81194097148527,
+   "acc20": 41.44812839039323,
+   "acc30": 57.86769306952979,
+   "packages": 2221350
+  }
+ },
+ "backend": "lightgbm",
+ "best_iteration": 103,
+ "seconds": 182,
+ "predict_seconds": 14,
+ "train_snapshots": 654151,
+ "val_snapshots": 296771,
+ "test_snapshots": 280775,
+ "args": {
+  "task": "eta",
+  "datasets": [
+   "delivery",
+   "pickup"
+  ],
+  "train_frac": 1.0,
+  "max_train_snapshots": null,
+  "max_val_snapshots": null,
+  "max_test_snapshots": null,
+  "seed": 0,
+  "tag": ""
+ },
+ "preview": false
+}

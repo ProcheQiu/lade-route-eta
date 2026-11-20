@@ -1,0 +1,70 @@
+NODE_NUM ['dx_km', 'dy_km', 'dist_km', 'min_since_accept', 'accept_order', 'same_aoi_last', 'to_window_start', 'to_window_end', 'has_window']
+SNAP_NUM ['hour', 'n_open', 'n_done']
+
+=== pickup ETA: gain share % ===
+to_window_start     66.0
+to_window_end       30.3
+c_median_dur         1.2
+n_open               0.5
+dist_km              0.3
+c_tasks_per_day      0.3
+hour                 0.3
+c_days               0.3
+c_median_gap         0.2
+same_aoi_last        0.1
+weekday              0.1
+min_since_accept     0.1
+mean |SHAP| (min):
+to_window_start     53.77
+to_window_end       38.09
+n_open               6.62
+c_median_dur         6.35
+dist_km              3.05
+c_median_gap         1.89
+c_days               1.49
+hour                 1.46
+same_aoi_last        1.29
+min_since_accept     1.05
+courier block |sum SHAP| mean: 7.27
+known MAE 34.25; unknown fallback row: {'c_known': np.float64(0.0), 'c_days': np.float64(8.0), 'c_tasks_per_day': np.float64(1.43), 'c_median_dur': np.float64(95.5), 'c_median_gap': np.float64(58.0)}
+  hide c_days           MAE 35.47 (+1.22)
+  hide c_tasks_per_day  MAE 35.53 (+1.28)
+  hide c_median_dur     MAE 38.00 (+3.76)
+  hide c_median_gap     MAE 37.50 (+3.25)
+  hide ALL              MAE 46.38 (+12.13)
+couriers with >=200 test packages: 289; spearman with their test median ETA: {'c_median_dur': 0.06, 'c_median_gap': 0.17, 'c_tasks': 0.03}
+SHAP of c_median_dur by its decile: {Interval(22.499, 106.0, closed='right'): -15.0, Interval(106.0, 124.0, closed='right'): -2.9, Interval(124.0, 132.0, closed='right'): 0.7, Interval(132.0, 143.0, closed='right'): 3.4, Interval(143.0, 549.0, closed='right'): 9.3}
+
+=== delivery ETA: gain share % ===
+c_median_dur        15.6
+n_open              14.1
+hour                10.2
+min_since_accept     9.8
+dist_km              9.6
+c_median_gap         9.1
+c_tasks_per_day      6.7
+c_days               5.3
+accept_order         4.0
+n_done               3.6
+dx_km                3.1
+dy_km                3.1
+mean |SHAP| (min):
+min_since_accept    15.75
+n_open              15.72
+c_median_gap        13.71
+dist_km             12.28
+hour                11.24
+c_median_dur         6.89
+n_done               5.64
+accept_order         5.31
+same_aoi_last        5.24
+c_tasks_per_day      4.64
+courier block |sum SHAP| mean: 20.67
+known MAE 56.00; unknown fallback row: {'c_known': np.float64(0.0), 'c_days': np.float64(15.0), 'c_tasks_per_day': np.float64(11.42), 'c_median_dur': np.float64(75.5), 'c_median_gap': np.float64(12.0)}
+  hide c_days           MAE 57.88 (+1.88)
+  hide c_tasks_per_day  MAE 59.85 (+3.86)
+  hide c_median_dur     MAE 57.92 (+1.92)
+  hide c_median_gap     MAE 59.77 (+3.77)
+  hide ALL              MAE 60.54 (+4.54)
+couriers with >=200 test packages: 402; spearman with their test median ETA: {'c_median_dur': 0.7, 'c_median_gap': 0.25, 'c_tasks': 0.04}
+SHAP of c_median_dur by its decile: {Interval(10.999, 62.0, closed='right'): -1.4, Interval(62.0, 76.0, closed='right'): -1.6, Interval(76.0, 98.0, closed='right'): -2.8, Interval(98.0, 133.0, closed='right'): 4.2, Interval(133.0, 462.0, closed='right'): 10.4}

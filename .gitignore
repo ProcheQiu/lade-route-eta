@@ -1,0 +1,19 @@
+# data: LaDe is CC BY-NC 4.0 and ~5 GB; download it yourself (see README)
+data/raw/*/*
+!data/raw/*/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# environment and caches
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# large or duplicated artifacts
+results/models/
+results_joint/models/
+results_run3/
+colab/*.zip
+colab/parquet/
+CODE_VERSION.txt

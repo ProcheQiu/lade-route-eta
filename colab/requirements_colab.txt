@@ -1,0 +1,3 @@
+# Colab already has torch (CUDA), numpy, scikit-learn, scipy. Only what may be missing or too old:
+pandas>=2.2
+pyarrow>=15

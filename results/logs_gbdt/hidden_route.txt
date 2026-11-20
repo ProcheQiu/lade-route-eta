@@ -1,0 +1,8 @@
+pickup: fitted, best iteration 460 (450s)
+  known: hr3 74.16, krc 58.26, lsd 1.42, lsd_sq 5.72, ed 5.99, snapshots 213428.00 (1120s)
+  hidden: hr3 73.63, krc 56.85, lsd 1.50, lsd_sq 6.35, ed 6.15, snapshots 213428.00 (1770s)
+pickup {"hr3": -0.530545820292275, "krc": -1.4123046579452847, "lsd": 0.0750437074883743, "lsd_sq": 0.6306453260437515, "ed": 0.1557902430796334} check {'krc': [np.float64(58.26443282360747), 58.26443282360747]}
+delivery: fitted, best iteration 618 (120s)
+  known: hr3 77.41, krc 41.65, lsd 1.31, lsd_sq 6.05, ed 3.61, snapshots 279424.00 (485s)
+  hidden: hr3 77.33, krc 41.45, lsd 1.32, lsd_sq 6.12, ed 3.61, snapshots 279424.00 (850s)
+delivery {"hr3": -0.08434016643764153, "krc": -0.2005522663624646, "lsd": 0.006728897310995352, "lsd_sq": 0.0636009738677279, "ed": 0.00783755153458543} check {'krc': [np.float64(41.64737272342367), 41.64737272342367]}

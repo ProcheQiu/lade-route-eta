@@ -1,0 +1,50 @@
+{
+ "all": {
+  "hr3": 74.36868192206096,
+  "krc": 57.50209922855733,
+  "lsd": 1.426948053479659,
+  "lsd_sq": 5.896046847014313,
+  "ed": 5.881531475380643,
+  "snapshots": 280775
+ },
+ "by_courier_known": {
+  "0": {
+   "hr3": 75.03378027232095,
+   "krc": 55.086203427343285,
+   "lsd": 1.445153538281334,
+   "lsd_sq": 6.46740334402649,
+   "ed": 5.53724739038116,
+   "snapshots": 67347
+  },
+  "1": {
+   "hr3": 74.1588107777174,
+   "krc": 58.26443282360747,
+   "lsd": 1.421203330271184,
+   "lsd_sq": 5.715755854247296,
+   "ed": 5.9901699870682386,
+   "snapshots": 213428
+  }
+ },
+ "train_rows": 12885450,
+ "backend": "lightgbm",
+ "best_iteration": 460,
+ "seconds": 1660,
+ "predict_seconds": 1027,
+ "train_snapshots": 163538,
+ "val_snapshots": 30000,
+ "test_snapshots": 280775,
+ "args": {
+  "task": "route",
+  "datasets": [
+   "pickup",
+   "delivery"
+  ],
+  "train_frac": 0.25,
+  "max_train_snapshots": null,
+  "max_val_snapshots": 30000,
+  "max_test_snapshots": null,
+  "seed": 0,
+  "tag": ""
+ },
+ "preview": false
+}

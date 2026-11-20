@@ -1,0 +1,120 @@
+{
+ "delivery": {
+  "preprocess": {
+   "raw_rows": 1483864,
+   "after_drop_duplicates": 1483864,
+   "drop_gps_drift": 1247,
+   "drop_couriers": 74,
+   "drop_courier_rows": 108,
+   "drop_same_spot_within_1min": 0,
+   "rows": 1482509
+  },
+  "build": {
+   "windows": 114372,
+   "windows_dropped_test": 6714,
+   "steps": 979194,
+   "steps_label0": 18576
+  },
+  "split": "official",
+  "courier_stats": "train",
+  "split_days": {
+   "train": [
+    "501",
+    "818"
+   ],
+   "val": [
+    "820",
+    "924"
+   ],
+   "test": [
+    "926",
+    "1031"
+   ]
+  },
+  "by_split": {
+   "test": {
+    "samples": 245412,
+    "label_ge1": 240856,
+    "mean_open": 5.360108715140254,
+    "mean_label_len": 5.0481068570404055,
+    "new_courier_share": 0.294
+   },
+   "train": {
+    "samples": 437511,
+    "label_ge1": 428696,
+    "mean_open": 5.27768673244787,
+    "mean_label_len": 4.965143733528985,
+    "new_courier_share": 0.0
+   },
+   "val": {
+    "samples": 296271,
+    "label_ge1": 291066,
+    "mean_open": 5.602127781659359,
+    "mean_label_len": 5.294686283841483,
+    "new_courier_share": 0.069
+   }
+  },
+  "eta_label_mean": 38.92704956170217,
+  "eta_label_median": 32.0,
+  "seconds": 231
+ },
+ "pickup": {
+  "preprocess": {
+   "raw_rows": 1424406,
+   "after_drop_duplicates": 1424406,
+   "drop_gps_drift": 565,
+   "drop_couriers": 1308,
+   "drop_courier_rows": 2198,
+   "drop_same_spot_within_1min": 0,
+   "rows": 1421643
+  },
+  "build": {
+   "windows": 117380,
+   "windows_dropped_test": 11394,
+   "steps": 890028,
+   "steps_label0": 232178
+  },
+  "split": "official",
+  "courier_stats": "train",
+  "split_days": {
+   "train": [
+    "503",
+    "821"
+   ],
+   "val": [
+    "823",
+    "925"
+   ],
+   "test": [
+    "927",
+    "1031"
+   ]
+  },
+  "by_split": {
+   "test": {
+    "samples": 97986,
+    "label_ge1": 75539,
+    "mean_open": 5.839875084195701,
+    "mean_label_len": 2.848008899230502,
+    "new_courier_share": 0.29
+   },
+   "train": {
+    "samples": 546745,
+    "label_ge1": 402738,
+    "mean_open": 7.978829253125315,
+    "mean_label_len": 2.8738150326020357,
+    "new_courier_share": 0.0
+   },
+   "val": {
+    "samples": 245297,
+    "label_ge1": 179573,
+    "mean_open": 8.017366702405655,
+    "mean_label_len": 2.735708141559008,
+    "new_courier_share": 0.125
+   }
+  },
+  "eta_label_mean": 34.4180298805808,
+  "eta_label_median": 26.0,
+  "seconds": 182
+ }
+}

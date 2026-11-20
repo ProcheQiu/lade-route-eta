@@ -1,0 +1,95 @@
+backend: lightgbm
+delivery: train 539145 / val 347993 / test 383354 snapshots (7s)
+delivery {
+ "all": {
+  "mae": 53.177533013115905,
+  "rmse": 89.16482208159285,
+  "acc20": 37.083105704579836,
+  "acc30": 51.80067959551962,
+  "packages": 2172763
+ },
+ "by_courier_known": {
+  "0": {
+   "mae": 44.37912121869575,
+   "rmse": 74.6046373322589,
+   "acc20": 37.19830765933963,
+   "acc30": 53.86020173823336,
+   "packages": 527317
+  },
+  "1": {
+   "mae": 55.99716496226419,
+   "rmse": 93.35165718572507,
+   "acc20": 37.04618686969977,
+   "acc30": 51.14066338245071,
+   "packages": 1645446
+  }
+ },
+ "backend": "lightgbm",
+ "best_iteration": 1039,
+ "seconds": 241,
+ "predict_seconds": 104,
+ "train_snapshots": 539145,
+ "val_snapshots": 347993,
+ "test_snapshots": 383354,
+ "args": {
+  "task": "eta",
+  "datasets": [
+   "delivery",
+   "pickup"
+  ],
+  "train_frac": 1.0,
+  "max_train_snapshots": null,
+  "max_val_snapshots": null,
+  "max_test_snapshots": null,
+  "seed": 0,
+  "tag": ""
+ },
+ "preview": false
+}
+pickup: train 654151 / val 296771 / test 280775 snapshots (21s)
+pickup {
+ "all": {
+  "mae": 37.602330616385544,
+  "rmse": 53.771608309668814,
+  "acc20": 37.40979046672138,
+  "acc30": 53.09815954146474,
+  "packages": 2852387
+ },
+ "by_courier_known": {
+  "0": {
+   "mae": 49.413833136544184,
+   "rmse": 65.842244937205,
+   "acc20": 23.19420255864553,
+   "acc30": 36.30864751195254,
+   "packages": 631037
+  },
+  "1": {
+   "mae": 34.24694082377593,
+   "rmse": 49.81194097148527,
+   "acc20": 41.44812839039323,
+   "acc30": 57.86769306952979,
+   "packages": 2221350
+  }
+ },
+ "backend": "lightgbm",
+ "best_iteration": 103,
+ "seconds": 182,
+ "predict_seconds": 14,
+ "train_snapshots": 654151,
+ "val_snapshots": 296771,
+ "test_snapshots": 280775,
+ "args": {
+  "task": "eta",
+  "datasets": [
+   "delivery",
+   "pickup"
+  ],
+  "train_frac": 1.0,
+  "max_train_snapshots": null,
+  "max_val_snapshots": null,
+  "max_test_snapshots": null,
+  "seed": 0,
+  "tag": ""
+ },
+ "preview": false
+}

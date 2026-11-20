@@ -1,0 +1,106 @@
+backend: lightgbm
+pickup: train 163538 / val 30000 / test 280775 snapshots (7s)
+fitted on 12885450 decision rows (633s)
+pickup {
+ "all": {
+  "hr3": 74.36868192206096,
+  "krc": 57.50209922855733,
+  "lsd": 1.426948053479659,
+  "lsd_sq": 5.896046847014313,
+  "ed": 5.881531475380643,
+  "snapshots": 280775
+ },
+ "by_courier_known": {
+  "0": {
+   "hr3": 75.03378027232095,
+   "krc": 55.086203427343285,
+   "lsd": 1.445153538281334,
+   "lsd_sq": 6.46740334402649,
+   "ed": 5.53724739038116,
+   "snapshots": 67347
+  },
+  "1": {
+   "hr3": 74.1588107777174,
+   "krc": 58.26443282360747,
+   "lsd": 1.421203330271184,
+   "lsd_sq": 5.715755854247296,
+   "ed": 5.9901699870682386,
+   "snapshots": 213428
+  }
+ },
+ "train_rows": 12885450,
+ "backend": "lightgbm",
+ "best_iteration": 460,
+ "seconds": 1660,
+ "predict_seconds": 1027,
+ "train_snapshots": 163538,
+ "val_snapshots": 30000,
+ "test_snapshots": 280775,
+ "args": {
+  "task": "route",
+  "datasets": [
+   "pickup",
+   "delivery"
+  ],
+  "train_frac": 0.25,
+  "max_train_snapshots": null,
+  "max_val_snapshots": 30000,
+  "max_test_snapshots": null,
+  "seed": 0,
+  "tag": ""
+ },
+ "preview": false
+}
+delivery: train 134786 / val 30000 / test 383354 snapshots (6s)
+fitted on 3113528 decision rows (137s)
+delivery {
+ "all": {
+  "hr3": 78.01135938758085,
+  "krc": 41.7704926903765,
+  "lsd": 1.257473182708065,
+  "lsd_sq": 5.538872776506083,
+  "ed": 3.4361477902930453,
+  "snapshots": 383354
+ },
+ "by_courier_known": {
+  "0": {
+   "hr3": 79.62250232528302,
+   "krc": 42.10151042968013,
+   "lsd": 1.1140282288704424,
+   "lsd_sq": 4.156072930622747,
+   "ed": 2.9764745501780046,
+   "snapshots": 103930
+  },
+  "1": {
+   "hr3": 77.41210490151168,
+   "krc": 41.64737272342367,
+   "lsd": 1.3108266314180688,
+   "lsd_sq": 6.053196485216342,
+   "ed": 3.607120361887311,
+   "snapshots": 279424
+  }
+ },
+ "train_rows": 3113528,
+ "backend": "lightgbm",
+ "best_iteration": 618,
+ "seconds": 730,
+ "predict_seconds": 593,
+ "train_snapshots": 134786,
+ "val_snapshots": 30000,
+ "test_snapshots": 383354,
+ "args": {
+  "task": "route",
+  "datasets": [
+   "pickup",
+   "delivery"
+  ],
+  "train_frac": 0.25,
+  "max_train_snapshots": null,
+  "max_val_snapshots": 30000,
+  "max_test_snapshots": null,
+  "seed": 0,
+  "tag": ""
+ },
+ "preview": false
+}
+ALL DONE
